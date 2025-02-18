@@ -6,27 +6,27 @@ We are **WebLayer**, a software services company specializing in web development
 ## 🌐 Services We Offer
 
 ### 🔹 Web Development  
-![Web Development](https://img.icons8.com/ios-filled/50/000000/web.png)  
+ 
 Custom websites, eCommerce platforms, and enterprise solutions.
 
 ### 📱 Mobile App Development  
-![Mobile App](https://img.icons8.com/ios-filled/50/000000/smartphone.png)  
+
 Native and cross-platform applications for iOS and Android.
 
 ### 🎨 UI/UX Design  
-![UI/UX](https://img.icons8.com/ios-filled/50/000000/design.png)  
+
 Professional and user-friendly interface designs.
 
 ### ☁️ Cloud & Hosting Services  
-![Cloud](https://img.icons8.com/ios-filled/50/000000/cloud.png)  
+
 Server rental, domain registration, and email hosting.
 
 ### 🔗 API Development & Integration  
-![API](https://img.icons8.com/ios-filled/50/000000/api.png)  
+
 Seamless API connections to enhance functionality.
 
 ### 📊 IT Consulting & Digital Marketing  
-![Consulting](https://img.icons8.com/ios-filled/50/000000/marketing.png)  
+
 Helping businesses grow online with effective strategies.
 
 ## 🛠 Technologies We Use
