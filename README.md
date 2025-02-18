@@ -33,7 +33,7 @@ Helping businesses grow online with effective strategies.
 
 | Technology  | Icon |
 |------------|------|
-| HTML5 | ![HTML5](https://img.icons8.com/color/48/000000/html-5.png) | | CSS3 | ![CSS3](https://img.icons8.com/color/48/000000/css3.png) |
+| HTML5 | ![HTML5](https://img.icons8.com/color/48/000000/html-5.png) |  CSS3 | ![CSS3](https://img.icons8.com/color/48/000000/css3.png) |
 | JavaScript | ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) |
 | Bootstrap | ![Bootstrap](https://img.icons8.com/color/48/000000/bootstrap.png) |
 | Vue.js | ![Vue.js](https://img.icons8.com/color/48/000000/vue-js.png) |
