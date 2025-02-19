@@ -1,5 +1,8 @@
 # WebLayer - Professional Software Services
 
+## 📊 GitHub Stats  
+![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=weblayerco&show_icons=true&theme=radical&count_private=true&include_all_commits=true&hide_border=true)
+
 ## 🚀 About Us
 We are **WebLayer**, a software services company specializing in web development and mobile applications. Our team is dedicated to delivering high-quality solutions using the latest technologies to meet business needs efficiently.
 
