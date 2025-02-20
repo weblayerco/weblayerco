@@ -36,16 +36,44 @@ Helping businesses grow online with effective strategies.
 
 | Technology  | Icon |
 |------------|------|
-| HTML5 | ![HTML5](https://img.icons8.com/color/48/000000/html-5.png) |  CSS3 | ![CSS3](https://img.icons8.com/color/48/000000/css3.png) |
+| HTML5 | ![HTML5](https://img.icons8.com/color/48/000000/html-5.png) |
+| CSS3 | ![CSS3](https://img.icons8.com/color/48/000000/css3.png) |
+| SASS/SCSS | ![SASS](https://img.icons8.com/color/48/000000/sass.png) |
 | JavaScript | ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) |
+| TypeScript | ![TypeScript](https://img.icons8.com/color/48/000000/typescript.png) |
 | Bootstrap | ![Bootstrap](https://img.icons8.com/color/48/000000/bootstrap.png) |
+| Tailwind CSS | ![Tailwind CSS](https://img.icons8.com/color/48/000000/tailwind_css.png) |
 | Vue.js | ![Vue.js](https://img.icons8.com/color/48/000000/vue-js.png) |
+| Nuxt.js | ![Nuxt.js](https://img.icons8.com/color/48/000000/nuxt-js.png) |
 | React | ![React](https://img.icons8.com/color/48/000000/react-native.png) |
+| Next.js | ![Next.js](https://img.icons8.com/ios-filled/50/ffffff/nextjs.png) |
+| Angular | ![Angular](https://img.icons8.com/color/48/000000/angularjs.png) |
+| Node.js | ![Node.js](https://img.icons8.com/color/48/000000/nodejs.png) |
+| Express.js | ![Express.js](https://img.icons8.com/ios-filled/50/000000/express-js.png) |
+| NestJS | ![NestJS](https://img.icons8.com/color/48/000000/nestjs.png) |
 | PHP | ![PHP](https://img.icons8.com/color/48/000000/php.png) |
-| Laravel | ![Laravel](https://img.icons8.com/color/48/000000/laravel.png) |
+| Laravel | ![Laravel](https://laravel.com/img/logomark.min.svg) |
+| Symfony | ![Symfony](https://img.icons8.com/ios/50/000000/symfony.png) |
+| Django | ![Django](https://img.icons8.com/color/48/000000/django.png) |
+| Flask | ![Flask](https://img.icons8.com/ios/50/000000/flask.png) |
+| Ruby on Rails | ![Ruby on Rails](https://img.icons8.com/color/48/000000/ruby-programming-language.png) |
 | Flutter | ![Flutter](https://img.icons8.com/color/48/000000/flutter.png) |
+| React Native | ![React Native](https://img.icons8.com/color/48/000000/react-native.png) |
 | Android | ![Android](https://img.icons8.com/color/48/000000/android-os.png) |
-| iOS | ![iOS](https://img.icons8.com/color/48/000000/apple-logo.png) |
+| iOS (Swift) | ![iOS](https://img.icons8.com/?size=100&id=79089&format=png&color=000000) |
+| PostgreSQL | ![PostgreSQL](https://img.icons8.com/color/48/000000/postgresql.png) |
+| MySQL | ![MySQL](https://img.icons8.com/color/48/000000/mysql-logo.png) |
+| MongoDB | ![MongoDB](https://img.icons8.com/color/48/000000/mongodb.png) |
+| Firebase | ![Firebase](https://img.icons8.com/color/48/000000/firebase.png) |
+| Docker | ![Docker](https://img.icons8.com/color/48/000000/docker.png) |
+| Kubernetes | ![Kubernetes](https://img.icons8.com/color/48/000000/kubernetes.png) |
+| GraphQL | ![GraphQL](https://img.icons8.com/color/48/000000/graphql.png) |
+| REST API | 🌐 |
+| AWS | ![AWS](https://img.icons8.com/color/48/000000/amazon-web-services.png) |
+| Google Cloud | ![Google Cloud](https://img.icons8.com/color/48/000000/google-cloud.png) |
+| Azure | ![Azure](https://img.icons8.com/color/48/000000/azure.png) |
+
+
 
 ## 📈 Company Statistics
 - 🏆 **50+** Successfully Completed Projects
