@@ -44,24 +44,24 @@ Helping businesses grow online with effective strategies.
 | Bootstrap | ![Bootstrap](https://img.icons8.com/color/48/000000/bootstrap.png) |
 | Tailwind CSS | ![Tailwind CSS](https://img.icons8.com/color/48/000000/tailwind_css.png) |
 | Vue.js | ![Vue.js](https://img.icons8.com/color/48/000000/vue-js.png) |
-| Nuxt.js | ![Nuxt.js](https://img.icons8.com/color/48/000000/nuxt-js.png) |
+| Nuxt.js | ![Nuxt.js](https://img.icons8.com/?size=48&id=nvrsJYs7j9Vb&format=png&color=000000) |
 | React | ![React](https://img.icons8.com/color/48/000000/react-native.png) |
-| Next.js | ![Next.js](https://img.icons8.com/ios-filled/50/ffffff/nextjs.png) |
+| Next.js | ![Next.js](https://img.icons8.com/?size=48&id=nvrsJYs7j9Vb&format=png&color=000000) |
 | Angular | ![Angular](https://img.icons8.com/color/48/000000/angularjs.png) |
 | Node.js | ![Node.js](https://img.icons8.com/color/48/000000/nodejs.png) |
-| Express.js | ![Express.js](https://img.icons8.com/ios-filled/50/000000/express-js.png) |
+| Express.js | ![Express.js](https://img.icons8.com/?size=48&id=kg46nzoJrmTR&format=png&color=000000) |
 | NestJS | ![NestJS](https://img.icons8.com/color/48/000000/nestjs.png) |
 | PHP | ![PHP](https://img.icons8.com/color/48/000000/php.png) |
 | Laravel | ![Laravel](https://laravel.com/img/logomark.min.svg) |
-| Symfony | ![Symfony](https://img.icons8.com/ios/50/000000/symfony.png) |
+| Symfony | ![Symfony](https://symfony.com/logos/symfony_black_03.png) |
 | Django | ![Django](https://img.icons8.com/color/48/000000/django.png) |
 | Flask | ![Flask](https://img.icons8.com/ios/50/000000/flask.png) |
 | Ruby on Rails | ![Ruby on Rails](https://img.icons8.com/color/48/000000/ruby-programming-language.png) |
 | Flutter | ![Flutter](https://img.icons8.com/color/48/000000/flutter.png) |
 | React Native | ![React Native](https://img.icons8.com/color/48/000000/react-native.png) |
 | Android | ![Android](https://img.icons8.com/color/48/000000/android-os.png) |
-| iOS (Swift) | ![iOS](https://img.icons8.com/?size=100&id=79089&format=png&color=000000) |
-| PostgreSQL | ![PostgreSQL](https://img.icons8.com/color/48/000000/postgresql.png) |
+| iOS (Swift) | ![iOS](https://img.icons8.com/?size=48&id=79089&format=png&color=000000) |
+| PostgreSQL | ![PostgreSQL](https://img.icons8.com/?size=48&id=25010&format=png&color=000000) |
 | MySQL | ![MySQL](https://img.icons8.com/color/48/000000/mysql-logo.png) |
 | MongoDB | ![MongoDB](https://img.icons8.com/color/48/000000/mongodb.png) |
 | Firebase | ![Firebase](https://img.icons8.com/color/48/000000/firebase.png) |
@@ -71,7 +71,7 @@ Helping businesses grow online with effective strategies.
 | REST API | 🌐 |
 | AWS | ![AWS](https://img.icons8.com/color/48/000000/amazon-web-services.png) |
 | Google Cloud | ![Google Cloud](https://img.icons8.com/color/48/000000/google-cloud.png) |
-| Azure | ![Azure](https://img.icons8.com/color/48/000000/azure.png) |
+| Azure | ![Azure](https://img.icons8.com/?size=48&id=VLKafOkk3sBX&format=png&color=000000) |
 
 
 
