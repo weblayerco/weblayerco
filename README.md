@@ -6,31 +6,30 @@
 ## 🚀 About Us
 We are **WebLayer**, a software services company specializing in web development and mobile applications. Our team is dedicated to delivering high-quality solutions using the latest technologies to meet business needs efficiently.
 
+Beyond commercial projects, we also focus on **charitable platforms**, helping non-profit organizations digitize their donation systems and manage campaigns effectively. 
+
 ## 🌐 Services We Offer
 
 ### 🔹 Web Development  
- 
 Custom websites, eCommerce platforms, and enterprise solutions.
 
 ### 📱 Mobile App Development  
-
 Native and cross-platform applications for iOS and Android.
 
 ### 🎨 UI/UX Design  
-
 Professional and user-friendly interface designs.
 
 ### ☁️ Cloud & Hosting Services  
-
 Server rental, domain registration, and email hosting.
 
 ### 🔗 API Development & Integration  
-
 Seamless API connections to enhance functionality.
 
 ### 📊 IT Consulting & Digital Marketing  
-
 Helping businesses grow online with effective strategies.
+
+### ❤️ Charity & Donation Platforms  
+We develop advanced platforms for non-profit organizations, allowing them to manage fundraising campaigns and donation systems efficiently. 
 
 ## 🛠 Technologies We Use
 
@@ -73,25 +72,32 @@ Helping businesses grow online with effective strategies.
 | Google Cloud | ![Google Cloud](https://img.icons8.com/color/48/000000/google-cloud.png) |
 | Azure | ![Azure](https://img.icons8.com/?size=48&id=VLKafOkk3sBX&format=png&color=000000) |
 
-
-
 ## 📈 Company Statistics
-- 🏆 **50+** Successfully Completed Projects
-- 💼 **10+** Years of Experience
-- 👨‍💻 **100+** Clients Served Globally
+- 🏆 **100+** Successfully Completed Projects
+- 💼 **7+** Years of Experience
+- 👨‍💻 **2500+** Clients Served Globally
 - 🌎 **30+** Countries Reached
 
 ## 🌟 Featured Projects
-- [Turkish Marketer](https://turkishmarketer.com/)
-- [ALK Hair](https://alk.hair/ar)
+- [Turkish Marketer](https://turkishmarketer.com/) - A B2B platform connecting businesses
+- [Labidov](https://labidov.com) - A professional MLM platform
+- [Al-Khair Charity](#) - A donation and charity management system
+** And More 👌
 
 ## 🤝 Collaboration
-We are open to working on innovative projects that enhance digital experiences and help businesses establish a strong online presence.
+We are open to working on innovative projects that enhance digital experiences and help businesses and charities establish a strong online presence.
+
+## 🤔 Why Choose WebLayer?
+✅ **Expert Team** – Skilled professionals in web & mobile development.  
+✅ **Client-Centric Approach** – We prioritize your business needs.  
+✅ **Cutting-Edge Technologies** – We use the latest tech stack.  
+✅ **Scalability & Security** – Robust solutions for future growth.  
+✅ **Reliable Support** – Dedicated assistance for your projects.  
+
+## ⚡ Fun Fact
+We thrive on turning complex ideas into user-friendly applications!
 
 ## 📬 Contact Us
 - 🌍 Website: [weblayer.com.tr](https://weblayer.com.tr/)
 - 📧 Email: info@weblayer.co
 - 🔗 GitHub: [github.com/weblayerco](https://github.com/weblayerco)
-
-## ⚡ Fun Fact
-We thrive on turning complex ideas into user-friendly applications!
