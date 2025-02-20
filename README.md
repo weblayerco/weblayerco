@@ -53,7 +53,7 @@ Helping businesses grow online with effective strategies.
 | NestJS | ![NestJS](https://img.icons8.com/color/48/000000/nestjs.png) |
 | PHP | ![PHP](https://img.icons8.com/color/48/000000/php.png) |
 | Laravel | ![Laravel](https://laravel.com/img/logomark.min.svg) |
-| Symfony | ![Symfony](https://symfony.com/logos/symfony_black_03.png) |
+| Symfony | <img src="https://symfony.com/logos/symfony_black_03.png" width="48" alt="Symfony"> |
 | Django | ![Django](https://img.icons8.com/color/48/000000/django.png) |
 | Flask | ![Flask](https://img.icons8.com/ios/50/000000/flask.png) |
 | Ruby on Rails | ![Ruby on Rails](https://img.icons8.com/color/48/000000/ruby-programming-language.png) |
