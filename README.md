@@ -4,9 +4,13 @@
 ![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=weblayerco&show_icons=true&theme=radical&count_private=true&include_all_commits=true&hide_border=true)
 
 ## 🚀 About Us
-We are **WebLayer**, a software services company specializing in web development and mobile applications. Our team is dedicated to delivering high-quality solutions using the latest technologies to meet business needs efficiently.
+At **WebLayer**, we craft innovative web and mobile solutions tailored to businesses worldwide. Our team of expert developers, designers, and strategists leverages cutting-edge technologies to deliver scalable, secure, and high-performing software solutions."
 
 Beyond commercial projects, we also focus on **charitable platforms**, helping non-profit organizations digitize their donation systems and manage campaigns effectively. 
+
+
+
+
 
 ## 🌐 Services We Offer
 
