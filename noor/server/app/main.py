@@ -11,6 +11,7 @@ import os
 
 from fastapi import FastAPI, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .assessor import Assessor, EnergyAssessor, build_assessor
 from .audio import load_wav
@@ -18,6 +19,13 @@ from .audio import load_wav
 REFERENCES_DIR = os.environ.get(
     "NOOR_REFERENCES_DIR",
     os.path.join(os.path.dirname(os.path.dirname(__file__)), "references"),
+)
+
+# Built frontend (noor/dist). When present, the API also serves the app so the
+# whole thing runs from a single origin/URL — no separate static host or CORS.
+STATIC_DIR = os.environ.get(
+    "NOOR_STATIC_DIR",
+    os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "dist"),
 )
 
 
@@ -82,3 +90,8 @@ async def assess(
             "engine": "error",
         }
     return ASSESSOR.assess(letter, harakah, signal, sr)
+
+
+# Mounted last so /health and /assess take precedence over the static catch-all.
+if os.path.isdir(STATIC_DIR):
+    app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")
