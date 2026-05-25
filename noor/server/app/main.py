@@ -12,13 +12,41 @@ import os
 from fastapi import FastAPI, Form, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
-from .assessor import build_assessor
+from .assessor import Assessor, EnergyAssessor, build_assessor
 from .audio import load_wav
 
 REFERENCES_DIR = os.environ.get(
     "NOOR_REFERENCES_DIR",
     os.path.join(os.path.dirname(os.path.dirname(__file__)), "references"),
 )
+
+
+def select_assessor() -> Assessor:
+    """Pick the engine from the environment.
+
+    NOOR_ENGINE: auto (default) | azure | dtw | energy
+    Azure also needs AZURE_SPEECH_KEY and AZURE_SPEECH_REGION.
+    """
+    engine = os.environ.get("NOOR_ENGINE", "auto").lower()
+    key = os.environ.get("AZURE_SPEECH_KEY")
+    region = os.environ.get("AZURE_SPEECH_REGION")
+
+    if engine in ("azure", "auto") and key and region:
+        from .azure_assessor import AzureAssessor
+
+        return AzureAssessor(
+            key=key,
+            region=region,
+            locale=os.environ.get("NOOR_AZURE_LOCALE", "ar-SA"),
+            pass_threshold=float(os.environ.get("NOOR_PASS_THRESHOLD", "80")),
+        )
+    if engine == "azure":
+        # Azure was explicitly requested but not configured.
+        return EnergyAssessor()
+    if engine == "energy":
+        return EnergyAssessor()
+    return build_assessor(REFERENCES_DIR)
+
 
 app = FastAPI(title="Noor Pronunciation Assessment", version="0.1.0")
 app.add_middleware(
@@ -28,7 +56,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-ASSESSOR = build_assessor(REFERENCES_DIR)
+ASSESSOR = select_assessor()
 
 
 @app.get("/health")

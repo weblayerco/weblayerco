@@ -45,3 +45,15 @@ def has_speech(signal: np.ndarray, sample_rate: int, min_sec: float = 0.2, min_r
     """Crude voice-activity check: long enough and loud enough to be a real attempt."""
     duration = signal.size / sample_rate if sample_rate else 0.0
     return duration >= min_sec and rms(signal) > min_rms
+
+
+def to_wav_bytes(signal: np.ndarray, sample_rate: int) -> bytes:
+    """Encode a float mono signal as 16-bit PCM mono WAV bytes."""
+    pcm = (np.clip(signal, -1.0, 1.0) * 32767.0).astype("<i2")
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sample_rate)
+        w.writeframes(pcm.tobytes())
+    return buf.getvalue()
