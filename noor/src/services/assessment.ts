@@ -1,5 +1,6 @@
 import type { AssessmentResult, HarakahInfo, Letter } from "../types";
 import { applyHarakah } from "../data/curriculum";
+import { blobToWav } from "./wav";
 
 export interface AssessTarget {
   letter: Letter;
@@ -78,8 +79,9 @@ export class ServerAssessor implements PronunciationAssessor {
   constructor(private endpoint: string) {}
 
   async assess(target: AssessTarget): Promise<AssessmentResult> {
+    const wav = await blobToWav(target.recordingBlob);
     const form = new FormData();
-    form.append("audio", target.recordingBlob, "attempt.webm");
+    form.append("audio", wav, "attempt.wav");
     form.append("letter", target.letter.id);
     form.append("harakah", target.harakah.id);
     const res = await fetch(this.endpoint, { method: "POST", body: form });
