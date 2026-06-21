@@ -1,0 +1,3 @@
+# Reference MFCC files (.npy) are generated here by scripts/build_references.py.
+# Commit real qari references once recorded; until then the server uses the
+# energy fallback engine.

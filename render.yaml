@@ -1,0 +1,20 @@
+# Render Blueprint — deploys Noor (app + AI assessment API) as one web service.
+# Render auto-detects this file at the repo root. After the first deploy, set
+# AZURE_SPEECH_KEY in the Render dashboard (it is intentionally not stored here).
+services:
+  - type: web
+    name: noor
+    runtime: docker
+    rootDir: noor
+    dockerfilePath: Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: NOOR_ENGINE
+        value: azure
+      - key: AZURE_SPEECH_REGION
+        value: westeurope        # change to your Azure resource region
+      - key: NOOR_AZURE_LOCALE
+        value: ar-SA
+      - key: AZURE_SPEECH_KEY
+        sync: false              # set this secret in the Render dashboard
