@@ -166,20 +166,14 @@ export function LearnScreen({
               {result.message}
             </div>
             {result.pass ? (
-              <>
-                <div className="confirm-row">
-                  <button className="btn-pass" onClick={pass}>
-                    أحسنت ✓ التالي
-                  </button>
-                  <button className="btn-retry" onClick={retry}>
-                    نُعيد
-                  </button>
-                </div>
-                <p className="parent-note">
-                  ملاحظة لوليّ الأمر: استمع لمحاولة الطفل وأكِّد صحة النطق قبل الانتقال.
-                  (التقييم التلقائي الدقيق للمخارج يُضاف عبر محرّك الذكاء الاصطناعي.)
-                </p>
-              </>
+              <div className="confirm-row">
+                <button className="btn-pass" onClick={pass}>
+                  ✓ نعم، صحيح
+                </button>
+                <button className="btn-retry" onClick={retry}>
+                  أعد المحاولة
+                </button>
+              </div>
             ) : (
               <div className="confirm-row">
                 <button className="btn-retry" onClick={retry}>

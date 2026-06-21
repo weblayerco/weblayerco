@@ -14,56 +14,21 @@ export interface PronunciationAssessor {
   assess(target: AssessTarget): Promise<AssessmentResult>;
 }
 
-interface AudioStats {
-  durationSec: number;
-  rms: number;
-  hasSpeech: boolean;
-}
-
-/** Decode the recording and compute crude loudness/length stats, fully local. */
-async function analyzeAudio(blob: Blob): Promise<AudioStats> {
-  const Ctx = window.AudioContext || (window as any).webkitAudioContext;
-  const ctx: AudioContext = new Ctx();
-  try {
-    const buf = await ctx.decodeAudioData(await blob.arrayBuffer());
-    const data = buf.getChannelData(0);
-    let sumSq = 0;
-    for (let i = 0; i < data.length; i++) sumSq += data[i] * data[i];
-    const rms = Math.sqrt(sumSq / data.length);
-    return {
-      durationSec: buf.duration,
-      rms,
-      hasSpeech: buf.duration >= 0.25 && rms > 0.01,
-    };
-  } finally {
-    ctx.close();
-  }
-}
-
 /**
- * Default, fully-local assessor. It can reliably detect "nothing was said"
- * or "too short", which already removes a class of false passes. It does NOT
- * yet verify that the correct letter/makhraj was produced — that requires a
- * phoneme-level model (see ServerAssessor) — so the parent confirms the gate.
+ * Default, fully-local assessor. There is no real AI in this offline mode, so
+ * we don't try to judge correctness — we just hand control to the parent, who
+ * listens to the child's attempt and decides. (Hooking up a real AI engine is
+ * what ServerAssessor / the deployed backend is for.)
  */
 export class HeuristicAssessor implements PronunciationAssessor {
   readonly name = "heuristic";
 
   async assess(target: AssessTarget): Promise<AssessmentResult> {
-    const stats = await analyzeAudio(target.recordingBlob);
     const glyph = applyHarakah(target.letter, target.harakah);
-    if (!stats.hasSpeech) {
-      return {
-        pass: false,
-        score: 0,
-        message: "لم نسمع صوتاً واضحاً. اضغط على الميكروفون وانطق الحرف بصوت مسموع.",
-        engine: this.name,
-      };
-    }
     return {
       pass: true,
-      score: Math.min(1, stats.rms * 8),
-      message: `سجّلنا محاولتك لنطق «${glyph}». استمع إليها، فإن كان النطق صحيحاً اضغط «أحسنت».`,
+      score: 1,
+      message: `استمع لمحاولة طفلك لنطق «${glyph}». إن كان النطق صحيحاً اضغط «نعم، صحيح» لينتقل إلى الحرف التالي.`,
       engine: this.name,
     };
   }
