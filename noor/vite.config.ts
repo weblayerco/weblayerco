@@ -7,7 +7,9 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const single = process.env.SINGLE_FILE === "1";
 
 export default defineConfig({
-  base: single ? "./" : "/",
+  // Relative base makes the same build work everywhere: served at any URL
+  // path, inside Capacitor's WebView (file://), or as a single file.
+  base: "./",
   plugins: [react(), ...(single ? [viteSingleFile()] : [])],
   server: { host: true },
 });

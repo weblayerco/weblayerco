@@ -1,0 +1,58 @@
+# Builds a debug APK on every push and uploads it as a workflow artifact,
+# so you can install Noor on an Android phone without needing Android Studio
+# locally. Download the artifact from the workflow run page → Artifacts.
+name: Android APK
+
+on:
+  push:
+    branches:
+      - main
+      - "claude/**"
+    paths:
+      - "noor/**"
+      - ".github/workflows/android-apk.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: noor
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: noor/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "21"
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Install web deps
+        run: npm ci
+
+      - name: Build web + sync Capacitor
+        run: npm run cap:sync
+
+      - name: Build debug APK
+        working-directory: noor/android
+        run: |
+          chmod +x ./gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: noor-debug-apk
+          path: noor/android/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 30

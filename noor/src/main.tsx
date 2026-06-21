@@ -9,9 +9,10 @@ createRoot(document.getElementById("root")!).render(
   </StrictMode>,
 );
 
-if ("serviceWorker" in navigator) {
+// Skip service worker outside http(s) — Capacitor/file:// loads don't support it.
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js").catch(() => {
+    navigator.serviceWorker.register("sw.js").catch(() => {
       /* offline support is optional */
     });
   });
