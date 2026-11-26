@@ -1,0 +1,12 @@
+node_modules
+dist
+.venv
+server/.venv
+server/raw_audio
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.git
+*.local
+.env
+.env.*
